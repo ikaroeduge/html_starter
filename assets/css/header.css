@@ -1,0 +1,27 @@
+/* header.css - სათაურის და ნავიგაციის სტილები */
+/*
+   ეს ფაილი განსაზღვრავს ჰედერისა და ნავიგაციის სტილს,
+   რაც საშუალებას იძლევა საიტის სტრუქტურას ჰქონდეს მკაფიო ვიზუალი.
+*/
+header {
+    background: var(--primary-color); /* ჰედერის ფონი */
+    color: var(--header-text-color); /* ჰედერის ტექსტის ფერი */
+    text-align: center; /* ტექსტის ცენტრალიზაცია */
+    padding: 15px; /* შიდა ველები */
+    font-size: 1.5em; /* ტექსტის ზომა */
+}
+
+nav {
+    background: var(--secondary-color); /* ნავიგაციის ფონი */
+    color: var(--header-text-color); /* ნავიგაციის ტექსტის ფერი */
+    padding: 10px; /* შიდა ველები */
+    text-align: center; /* ტექსტის ცენტრალიზაცია */
+}
+nav a {
+    color: var(--header-text-color); /* ბმულების ფერი */
+    text-decoration: none; /* ხაზის მოცილება ბმულებიდან */
+    margin: 0 15px; /* დაშორება ბმულებს შორის */
+}
+nav a:hover {
+    text-decoration: underline; /* ხაზის დამატება ჰოვერზე */
+}

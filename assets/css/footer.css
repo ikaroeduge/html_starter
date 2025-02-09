@@ -1,0 +1,11 @@
+/* footer.css - ფუტერის სტილები */
+/*
+   ეს ფაილი განსაზღვრავს ფუტერის დიზაინს,
+   რომელიც ყოველთვის ბოლოში უნდა განთავსდეს.
+*/
+footer {
+    background: var(--footer-background); /* ფუტერის ფონი */
+    color: var(--header-text-color); /* ტექსტის ფერი */
+    text-align: center; /* ცენტრალიზაცია */
+    padding: 10px; /* შიდა ველები */
+}

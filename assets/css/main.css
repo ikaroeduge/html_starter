@@ -1,0 +1,31 @@
+/* main.css - ძირითადი კონტენტის სტილები */
+/*
+   ეს ფაილი განსაზღვრავს გვერდის ძირითად კონტენტს,
+   მათ შორის ძირითადი კონტეინერის და ასაიდის სტილებს.
+*/
+.container {
+    display: grid; /* ბადის სტრუქტურა */
+    grid-template-columns: 1fr; /* ერთი სვეტი */
+    gap: 20px; /* დაშორება ელემენტებს შორის */
+    max-width: 1200px; /* კონტენტის მაქსიმალური სიგანე */
+    margin: auto; /* ცენტრში განლაგება */
+    padding: 20px; /* შიდა ველები */
+}
+
+aside {
+    background: #f8f9fa; /* გვერდითი პანელის ფონი */
+    padding: 20px; /* შიდა ველები */
+    border-radius: var(--border-radius); /* მომრგვალებული კუთხეები */
+}
+
+main {
+    background: var(--container-background); /* მთავარი კონტენტის ფონი */
+    padding: 20px; /* შიდა ველები */
+    border-radius: var(--border-radius); /* მომრგვალებული კუთხეები */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* ჩრდილი */
+}
+
+figure img {
+    width: 100%; /* სურათის სრულად შევსება */
+    border-radius: var(--border-radius); /* მომრგვალებული კუთხეები */
+}

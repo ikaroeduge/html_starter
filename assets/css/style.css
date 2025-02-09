@@ -1,163 +1,29 @@
-/* ძირითადი სტილები */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    display: grid;
-    grid-template-rows: auto auto 1fr auto;
-    height: 100vh;
-}
+/* style.css - მთავარი ფაილი, რომელიც აერთიანებს ყველა დანარჩენს */
+/*
+   ეს ფაილი მოიცავს ყველა დანარჩენ CSS ფაილს,
+   რაც უზრუნველყოფს მთლიანი საიტის სტრუქტურას.
+*/
 
-/* სათაური */
-header {
-    background: #007bff;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 1.5em;
-}
+/* base.css - ცვლადები */
 
-/* ნავიგაცია */
-nav {
-    background: #0056b3;
-    color: white;
-    padding: 10px;
-    text-align: center;
-}
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-}
-nav a:hover {
-    text-decoration: underline;
-}
+@import url("base.css");
 
-/* მთავარი კონტეინერი */
-.container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
 
-/* გვერდითი პანელი */
-aside {
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-}
+/* header.css - სათაურის და მენიუს სტილები */
 
-/* მთავარი სექცია */
-main {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
+@import url("header.css");
 
-/* სურათები */
-figure img {
-    width: 100%;
-    border-radius: 10px;
-}
 
-/* ქვედა კოლონტიტული */
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
+/* main.css - ძირითადი კონტენტის სტილები */
 
-/* ღილაკები */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #28a745;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-.button:hover {
-    background: #218838;
-}
+@import url("main.css");
 
-/* კონტაქტის გვერდის სტილები */
-.contact-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
 
-.contact-info, .contact-form {
-    padding: 20px;
-}
+/* footer.css - ფუტერის სტილები */
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-}
+@import url("footer.css");
 
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
-button {
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
+/* media.css - რესპონსივი */
 
-button:hover {
-    background-color: #0056b3;
-}
-
-/* რეზპონსივი */
-@media (max-width: 768px) {
-    .container {
-        grid-template-columns: 1fr;
-    }
-    .contact-container {
-        grid-template-columns: 1fr;
-    }
-}
-@media (min-width: 768px) {
-    .container {
-        grid-template-columns: 250px 1fr;
-    }
-}
-@media (min-width: 992px) {
-    .container {
-        grid-template-columns: 300px 1fr;
-    }
-    main {
-        padding: 30px;
-    }
-}
-@media (min-width: 1200px) {
-    .container {
-        grid-template-columns: 350px 1fr;
-    }
-    main {
-        padding: 40px;
-    }
-}
+@import url("media.css");
